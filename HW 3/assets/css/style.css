@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+
+body {
+    width: 1440px;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
