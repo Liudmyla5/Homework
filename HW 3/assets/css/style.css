@@ -1,5 +1,11 @@
-ul {
+.list {
     list-style: none;
+    display: flex; 
+    justify-content: center;
+}
+
+li {
+    margin: 0 20px; 
 }
 
 body {
@@ -7,6 +13,59 @@ body {
     text-align: center;
 }
 
+header {
+    width: 100%; 
+    height: 80px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.item{
+    color: #828282;
+}
+
+.item-home {
+    color: #070707;
+}
+
 header a {
     text-decoration: none;
+}
+
+.list_portfolio {
+    list-style: none;
+}
+
+.list_portfolio a {
+    color:#070707;
+}
+
+.about {
+    background-color: #F6F6F6;
+}
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+button {
+    border-radius: 22px;
+    padding: 0px 16px;
+    width: 180px;
+    height: 44px;
+    background: #070707;
+}
+
+.button-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
 }
