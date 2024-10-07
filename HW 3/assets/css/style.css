@@ -4,13 +4,19 @@
     justify-content: center;
 }
 
-li {
+ li {
     margin: 0 20px; 
 }
 
-body {
-    width: 1440px;
+.container {
+    width: 95%;
+    max-width: 970px;
+    margin: 0 auto;
     text-align: center;
+}
+
+div h1 {
+    text-align: left;
 }
 
 header {
