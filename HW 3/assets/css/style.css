@@ -29,7 +29,7 @@ nav {
     color: #828282;
 }
 
-.item-home {
+a:hover, a:focus {
     color: #070707;
 }
 
@@ -47,6 +47,10 @@ header a {
 
 .about {
     background-color: #F6F6F6;
+}
+
+.gray {
+    opacity: .3;
 }
 
 .portfolio {
