@@ -105,6 +105,8 @@ button {
     height: 44px;
     background: #070707;
     cursor: pointer;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .button-text {
