@@ -108,7 +108,6 @@ button {
 }
 
 .button-text {
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     letter-spacing: 0.1em;
