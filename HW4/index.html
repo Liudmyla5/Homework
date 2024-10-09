@@ -25,19 +25,19 @@
     <form action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
         <div class="form-row">
          <label for="name">Повне ім'я</label>
-         <input type="text" name="name" id="name"/>
+         <input type="text" name="name" id="name" required/>
         </div>
         <div class="form-row">
          <label for="Email">Email</label>
-         <input type="text" name="Email" id="Email"/>
+         <input type="text" name="Email" id="Email" required/>
         </div>
         <div class="form-row">
          <label for="password">Пароль</label>
-         <input type="password" name="pass" id="password"/>
+         <input type="password" name="pass" id="password" required/>
         </div>
         <div class="form-row">
          <label for="password">Пароль ще раз</label>
-         <input type="password" name="pass" id="password"/>
+         <input type="password" name="pass_confirm" id="password_confirm" required/>
         </div>
         <div>
          <label>Стать</label>
@@ -50,11 +50,12 @@
         </div>
         <div class="form-row">
          <label for="age">Вік</label>
-         <input type="number" name="age" id="age"/>
+         <input type="number" name="age" id="age" required/>
         </div>
         <div class="form-row">
         <label for="course">Курс</label>
-         <select name="course[]" id="course">
+         <select name="course" id="course" required>
+            <option value="" disabled selected>Оберіть курс</option>
            <option>Front-End</option>
            <option>Back-End</option>
            <option>Project Management</option>
@@ -63,10 +64,10 @@
         </div>
         <div class="form-row">
          <label for="address">Повна адреса</label>
-         <textarea name="address" id="address" cols="25" rows="5">Країна, регіон, місто/селище, вулиця</textarea>
+         <textarea name="address" id="address" cols="25" rows="5" required>Країна, регіон, місто/селище, вулиця</textarea>
         </div>
         <div>
-         <input type="checkbox" id="agree" name="agree" value="true">
+         <input type="checkbox" id="agree" name="agree" value="true" required>
          <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
         </div>
         <br>
