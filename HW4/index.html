@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .form-row {
+            margin-bottom: 10px;
+        }
+        .form-row label {
+            display: inline-block;
+            width: 200px;
+        }
+        .form-row input {
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <div class="form-row">
+         <label for="name">Повне ім'я</label>
+         <input type="text" name="name" id="name"/>
+        </div>
+        <div class="form-row">
+         <label for="Email">Email</label>
+         <input type="text" name="Email" id="Email"/>
+        </div>
+        <div class="form-row">
+         <label for="password">Пароль</label>
+         <input type="password" name="pass" id="password"/>
+        </div>
+        <div class="form-row">
+         <label for="password">Пароль ще раз</label>
+         <input type="password" name="pass" id="password"/>
+        </div>
+        <div>
+         <label>Стать</label>
+         <label>
+            <input type="radio" name="gender" value="male" checked>Male
+         </label>
+         <label>
+            <input type="radio" name="gender" value="female">Female
+         </label>
+        </div>
+        <div class="form-row">
+         <label for="age">Вік</label>
+         <input type="number" name="age" id="age"/>
+        </div>
+        <div class="form-row">
+        <label for="course">Курс</label>
+         <select name="course[]" id="course">
+           <option>Front-End</option>
+           <option>Back-End</option>
+           <option>Project Management</option>
+           <option>QA Manual</option>
+         </select>
+        </div>
+        <div class="form-row">
+         <label for="address">Повна адреса</label>
+         <textarea name="address" id="address" cols="25" rows="5">Країна, регіон, місто/селище, вулиця</textarea>
+        </div>
+        <div>
+         <input type="checkbox" id="agree" name="agree" value="true">
+         <label for="agree">Я погоджуюсь з обробкою персональних даних</label>
+        </div>
+        <br>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареєструватися</button>
+
+    </form>
+</body>
+</html>
