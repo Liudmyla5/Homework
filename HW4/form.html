@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <label>Age</label>
+        <input type="number" name="age" min="16"/>
+        <br>
+        <label>Email</label>
+        <input type="email" name="email" required/>
+        <br>
+        <input type="range" name="range" value="10" from="5" to="25" step="2"/>
+        <br>
+        <label>Time</label>
+        <input type="time" name="time"/>
+        <br>
+        <input type="color" name="color"/>
+        <br>
+        <label>Date</label>
+        <input type="date" name="date"/>
+        <br>
+        <label>Telephon</label>
+        <input type="tel" name="tel"/>
+        <br>
+        <label>Search something</label>
+        <input type="search" name="search"/>
+        <br>
+        <label>Skills</label>
+           <ul>
+             <li>
+               <label><input type="checkbox" name="skill[]" value="CSS"/>CSS</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="skill[]" value="HTML"/>HTML</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="skill[]" value="JS"/>JS</label>
+             </li>
+           </ul>
+        <br>
+        <label for="drinks">Drinks</label>
+        <select name="drinks" id="drinks" multiple size="5">
+          <optgroup label="Non alcohole">
+            <option value="water">Water</option>
+            <option value="milk">Milk</option>
+            <option value="Juce">Juce</option>
+          </optgroup>
+          <optgroup label="Alcohole">
+            <option value="wine">Wine</option>
+            <option value="beer">Beer</option>
+            <option value="martini">Martini</option>
+          </optgroup>
+        </select>
+        <br>
+        <input type="file" name="avatar"/>
+    </form>
+</body>
+</html>
