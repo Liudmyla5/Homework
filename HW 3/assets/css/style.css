@@ -1,5 +1,9 @@
+
+
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
+    color:#070707;
 }
 
 h1 {
@@ -17,18 +21,24 @@ p {
    font-size: 18px;
 }
 
-.paragraph {
-   font-weight: 400;
-   font-size: 18px;
+header .container {
+    border-bottom: 1px solid #828282;
+    /* padding: 25px 0; */
 }
+
 .list {
     list-style: none;
     display: flex; 
     justify-content: center;
+    margin: 20px;
 }
 
  li {
     margin: 0 20px; 
+}
+
+.main-menu {
+    line-height: 30px;
 }
 
 .container {
@@ -42,9 +52,7 @@ div h1 {
     text-align: left;
 }
 
-header .container {
-    border-bottom: 1px solid #828282;
-}
+
 
 .fig-item {
     color:#828282;
