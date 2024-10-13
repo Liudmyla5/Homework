@@ -1,126 +1,223 @@
+:root {
+    --text-color: #070707;
+}
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.125rem;
-    color:#070707;
+    color: var(--text-color);
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 48px;
-}
-
-h2 {
-   font-weight: 700;
-   font-size: 34px;
-}
-
-p {
-   font-weight: 400;
-   font-size: 18px;
-}
-
-header .container {
-    border-bottom: 1px solid #828282;
-    /* padding: 25px 0; */
-}
-
-.list {
+ul {
     list-style: none;
-    display: flex; 
-    justify-content: center;
-    margin: 20px;
 }
 
- li {
-    margin: 0 20px; 
-}
-
-.main-menu {
-    line-height: 30px;
+img {
+    vertical-align: top;
 }
 
 .container {
     width: 95%;
     max-width: 970px;
     margin: 0 auto;
+}
+
+/* ==HEADER== */
+
+header .container {
+    border-bottom: 1px solid #828282;
+    padding: 25px 0 24px;
+}
+
+.main-menu ul {
     text-align: center;
+    font-size: 0;
 }
 
-div h1 {
-    text-align: left;
+.main-menu ul li {
+    display: inline;
+    margin: 20px;
+    font-size: 1.125rem;
 }
 
+.main-menu ul li a {
+    line-height: 30px;
+    color: #828282;
+    text-decoration: none;
+}
 
+.main-menu ul li a:hover {
+    color: var(--text-color);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 100px;
+ }
+
+ p {
+   text-align: center;
+   font-weight: 400;
+ }
+
+
+/* ==MAIN==*/
+
+.first-block {
+    margin-top: 12px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 45px;
+}
+
+/* Block about */
+
+.about {
+    background-color: #F6F6F6;
+}
+
+.about .container {
+    padding-bottom: 100px;
+}
+
+.about p {
+    padding-top: 50px;
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+/* Block skills */
+
+#skills hgroup p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
 .fig-item {
     color:#828282;
     font-weight: 700;
-    font-size: 14px;
     letter-spacing: 0.02em;
+    font-size: 0.875rem;
 }
 
-.item {
-    font-weight: 400;
-    font-size: 14px;
-    color:#828282;
+figcaption {
+    margin: 25px 46px 60px 46px;
 }
 
-a:hover, a:focus {
-    color: #070707;
+.list {
+    text-align: center;
+    font-size: 0;
 }
 
- header {
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
- }
+.list li {
+    display: inline-block;
+    margin-right: 45px;
+    font-size: 1.125rem;
+    margin-bottom: 100px;
+}
 
-header a {
-    text-decoration: none;
+
+/* Block portfolio */
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.portfolio .container {
+    padding-bottom: 100px;
 }
 
 .list_portfolio {
-    list-style: none;
+    margin-top: 48px;
 }
 
-.list_portfolio a {
-    color:#070707;
+.list_portfolio li {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
-.about {
-    background-color: #F6F6F6;
+.list_portfolio li figcaption a {
+    color: var(--Black, #070707);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
 }
 
 .gray {
     opacity: .3;
 }
 
-.portfolio {
-    background-color: #F6F6F6;
+
+
+
+
+/* Block contacts */
+
+#contacts .container hgroup p {
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
-.portfolio a {
+.list-soc {
+    text-align: center;
+    font-size: 0;
+}
+
+.list-soc li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 1.125rem;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.item {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.875rem;
+    color:#828282;
+    text-align: center;
 }
 
-button {
+
+.button {
+    display: inline-block;
     border-radius: 22px;
     padding: 0px 16px;
     width: 180px;
     height: 44px;
-    background: #070707;
+    line-height: 40px;
+    background-color: #070707;
+    color: #fff;
     cursor: pointer;
     margin-top: 60px;
     margin-bottom: 30px;
+    border: 2px solid #070707;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.125rem;
 }
 
-.button-text {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    text-align: center;
-    color: #fff;
+
+.button:hover {
+    color: #070707;
+    background-color: #fff;
 }
+
+
+
+
+
+
+
+
