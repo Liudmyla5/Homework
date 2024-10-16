@@ -28,6 +28,20 @@ img {
     margin: 0 auto;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 100px;
+ }
+
+ p {
+   text-align: center;
+   font-weight: 400;
+ }
+
+
 /* ==HEADER== */
 
 header .container {
@@ -55,19 +69,6 @@ header .container {
 .main-menu ul li a:hover {
     color: var(--text-color);
 }
-
-h2 {
-    text-align: center;
-    font-size: 2.125rem;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 100px;
- }
-
- p {
-   text-align: center;
-   font-weight: 400;
- }
 
 
 /* ==MAIN==*/
@@ -189,7 +190,6 @@ figcaption {
     color:#828282;
     text-align: center;
 }
-
 
 .button {
     display: inline-block;

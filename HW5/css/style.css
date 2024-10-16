@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+}
+
+div ul {
+    width: 800px;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+
+ul {
+    list-style: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+}
+
+hgroup {
+    color: #FF8984;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+hgroup p {
+    margin-top: 6px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+header {
+    background-color: #4A4F56;
+}
+
+main {
+    background-color: #3B3F45;
+}
+
+li {
+    height: 68px;
+    padding: 0px 15px;
+    gap: 15px;
+    transition: all .1s ease-in;
+    color: #FFF;
+    font-size: 1.6875rem;
+    font-weight: 400;
+    line-height: 2rem;
+    align-items: center;
+}
+
+li:first-of-type {
+    border-top: 3px solid #88839E;
+    border-bottom: 3px solid #88839E;
+    background: #88839E;
+}
+
+ul li:last-of-type {
+    border-top: 3px solid #625E77;
+    border-bottom: 3px solid #625E77;
+    background: #625E77;
+}
+
+li:nth-of-type(2) {
+    border-top: 3px solid #625E77;
+    border-bottom: 3px solid #625E77;
+    background: #625E77;
+}
+
+li:nth-of-type(3) {
+    border-top: 3px solid #88839E;
+    border-bottom: 3px solid #88839E;
+    background: #88839E;
+}
+
+li:nth-of-type(4) {
+    border-top: 3px solid #625E77;
+    border-bottom: 3px solid #625E77;
+    background: #625E77;
+}
+
+li:nth-of-type(5) {
+    border-top: 3px solid #88839E;
+    border-bottom: 3px solid #88839E;
+    background: #88839E;
+}
+
+li:hover {
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    background-color: #625E77;
+    scale: 1.2;
+}
+
+li:active {
+    color: #9B96AC;
+    background-color: #FF8984;
+    text-decoration: line-through;
+}
+
+
+input[type="checkbox"]:checked + span {
+    color: #9B96AC;
+    text-decoration: line-through;  
+     
+}
+
+
+input [type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+input [type="checkbox"] {
+    position: relative;
+}
+
+input [type="checkbox"] + label::before {
+    content: "" ;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input [type="checkbox"]:checked + label::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+
+li:first-of-type:after {
+    content: "(for the next lessons about CSS)";
+}
+
+li:nth-of-type(2)::after {
+    content: "(for more CSS manipulations)";
+}
+li:nth-of-type(3)::after {
+    content: "(because they are awesome)";
+}
+li:nth-of-type(4)::after {
+    content: "(hm... they always dissapear)";
+}
+li:last-of-type::after {
+    content: "(for my friends)";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div p {
+    background-color: #4A4F56;
+    color: #FF8984;
+    width: 800px;
+    height: 65px;
+    padding: 16px 0px;
+    margin-bottom: 100px;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #3B3F45;
+}
